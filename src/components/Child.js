@@ -1,6 +1,6 @@
 import React from "react";
 
-const Child1 = ({ isLoggedIn, setIsLoggedIn }) => {
+const Child= ({ isLoggedIn, setIsLoggedIn }) => {
   function handleSubmit(e){
     e.preventDefault();
     setIsLoggedIn(!isLoggedIn);
@@ -11,11 +11,11 @@ const Child1 = ({ isLoggedIn, setIsLoggedIn }) => {
       <form className={isLoggedIn ? "hide" : "child"}>
         <div>
           <label htmlFor="userName">Username:</label>
-          <input type="text" id="userName" className="userName" />
+          <input type="text" id="userName" className="userName"/>
         </div>
         <div>
           <label htmlFor="password">Password:</label>
-          <input type="password" id="password" className="password" />
+          <input type="password" id="password" className="password"/>
         </div>
         <button type="submit" onClick={handleSubmit}>Login</button>
       </form> 
@@ -24,4 +24,4 @@ const Child1 = ({ isLoggedIn, setIsLoggedIn }) => {
   );
 };
 
-export default Child1;
+export default Child;

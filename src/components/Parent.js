@@ -1,16 +1,16 @@
 import React,{useState} from 'react'
-import Child1 from './Child1';
+import Child from './Child';
 
-const Parent1 = () => {
+const Parent = () => {
     const [isLoggedIn,setIsLoggedIn]=useState(false);
     console.log(isLoggedIn);
 
   return (
     <div>
         <h1>Parent Component</h1>
-        <Child1 isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+        <Child isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
     </div>
   )
 }
 
-export default Parent1
+export default Parent
